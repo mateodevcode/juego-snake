@@ -4,7 +4,7 @@
 
 ¡Hola a todos! 😄 Estoy emocionado de compartir con ustedes mi versión del clásico juego Snake que desarrollé siguiendo la increíble tutoría de freeCodeCamp. 🎮
 
-![image](https://github.com/user-attachments/assets/477866d3-1e78-4b19-95af-1cac22693222)
+[![image](https://github.com/user-attachments/assets/477866d3-1e78-4b19-95af-1cac22693222)](https://mateodevcode.github.io/juego-snake/)
 
 
 ## 🛠️ Tecnologías Utilizadas:
