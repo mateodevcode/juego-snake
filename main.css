@@ -7,13 +7,17 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: url('fondo_1.jpg') no-repeat center/cover;
+    height: 100vh;
 }
 
 .menu-principal {
     width: 500px;
+
 }
 
-#board, .boardInfo {
+#board,
+.boardInfo {
     max-width: 500px;
 }
 
@@ -22,26 +26,42 @@ body {
     grid-template-columns: repeat(10, 1fr);
 }
 
-#start, .boardInfo {
+#start,
+.boardInfo {
     font-size: 25px;
 }
 
 #gameOver {
     display: none;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.47);
 }
 
 .boardInfo {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+    background-color: rgba(0, 0, 255, 0.436);
+
 }
 
 #start {
-    background-color: #f35a69;
+    background-color: #ee162c;
     border: none;
     color: white;
+    cursor: pointer;
 }
 
+#start:hover {
+    background-color: #ff2f4c;
+}
+
+#score {
+    color: white;
+    padding: 5px;
+}
 
 #scoreBoard {
     display: inline-flex;
@@ -52,14 +72,73 @@ body {
 }
 
 .emptySquare {
-    background-color: #456990;
+    background-color: rgba(0, 0, 0, 0.47);
 }
 
 .snakeSquare {
-    background-color: #ccf47f;
+    background-color: #3751f5;
 }
 
 .foodSquare {
-    background-color: #f35a69;
+    background-color: #e8f71b;
 }
 
+
+@media screen and (max-width: 500px) {
+    .menu-principal {
+        width: 100%;
+    }
+
+    #board,
+    .boardInfo {
+        max-width: 100%;
+    }
+
+}
+
+#controles {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#controles div {
+    background-color: #ee162c;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+}
+
+#controles div>img {
+    width: 25px;
+    height: 25x;
+    
+}
+
+#left {
+    transform: rotate(180deg);
+    user-select: none;
+}
+
+#up {
+    transform: rotate(-90deg);
+    user-select: none;
+}
+
+#down {
+    transform: rotate(90deg);
+    user-select: none;
+}
+
+#right {
+    transform: rotate(0deg);
+    user-select: none;
+}

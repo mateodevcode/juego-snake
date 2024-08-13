@@ -4,6 +4,7 @@ const scoreBoard = document.getElementById("scoreBoard");
 const startButton = document.getElementById("start");
 const gameOverSign = document.getElementById("gameOver");
 
+
 // Game settings
 const boardSize = 10;
 const gameSpeed = 100;
@@ -110,6 +111,24 @@ const directionEvent = (key) => {
   }
 };
 
+const directionEventMobile = (e) => {
+  switch (e.target.alt) {
+    case "ArrowUp":
+      direction != "ArrowDown" && setDirection(e.target.alt);
+      break;
+    case "ArrowDown":
+      direction != "ArrowUp" && setDirection(e.target.alt);
+      break;
+    case "ArrowLeft":
+      direction != "ArrowRight" && setDirection(e.target.alt);
+      break;
+    case "ArrowRight":
+      direction != "ArrowLeft" && setDirection(e.target.alt);
+      break;
+  }
+};
+
+
 const createRandomFood = () => {
   const randomEmptySquare =
     emptySquares[Math.floor(Math.random() * emptySquares.length)];
@@ -140,7 +159,6 @@ const setGame = () => {
   boardSquares = Array.from(Array(boardSize), () =>
     new Array(boardSize).fill(squareTypes.emptySquare)
   );
-  console.log(boardSquares);
   board.innerHTML = "";
   emptySquares = [];
   createBoard();
@@ -154,7 +172,10 @@ const startGame = () => {
   updateScore();
   createRandomFood();
   document.addEventListener("keydown", directionEvent);
+  document.addEventListener("click", directionEventMobile);
   moveInterval = setInterval(() => moveSnake(), gameSpeed);
 };
 
+
 startButton.addEventListener("click", startGame);
+

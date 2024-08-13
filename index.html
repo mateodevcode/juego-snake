@@ -9,20 +9,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="/logo.ico" type="image/x-icon">
     <script src="game.js" type="text/javascript" defer></script>
 </head>
 
 <body>
     <div class="menu-principal">
         <div id="board"></div>
-    <div class="boardInfo">
-        <div>
-            Score: <div id="scoreBoard"></div>
+        <div class="boardInfo">
+            <div id="score">
+                Score: <div id="scoreBoard"></div>
+            </div>
+            <button id="start">Start</button>
         </div>
-        <button id="start">Start</button>
-    </div>
-
-    <div id="gameOver">Game Over</div>
+        <div id="controles">
+            <div id="left">
+                <img src="arrow.png" alt="ArrowLeft">
+            </div>
+            <div id="up">
+                <img src="arrow.png" alt="ArrowUp">
+            </div>
+            <div id="down">
+                <img src="arrow.png" alt="ArrowDown">
+            </div>
+            <div id="right">
+                <img src="arrow.png" alt="ArrowRight">
+            </div>
+        </div>
+        <div id="gameOver">Game Over</div>
     </div>
 
 </body>
