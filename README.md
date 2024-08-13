@@ -1,5 +1,7 @@
 # 🐍 ¡Juega a mi versión de Snake! 🐍
 
+👉 [Ir a la web](https://mateodevcode.github.io/juego-snake/)
+
 ¡Hola a todos! 😄 Estoy emocionado de compartir con ustedes mi versión del clásico juego Snake que desarrollé siguiendo la increíble tutoría de freeCodeCamp. 🎮
 
 ![image](https://github.com/user-attachments/assets/7f0f6e61-b1ef-4f7f-9e2e-7431a672cfe7)
